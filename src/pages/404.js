@@ -5,6 +5,8 @@ import { Link } from "gatsby"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faChurch } from '@fortawesome/free-solid-svg-icons'
 
+import "../components/style.css"
+
 const NotFoundPage = () => (
   <div className="wrapper">
     <SEO title="404" />
