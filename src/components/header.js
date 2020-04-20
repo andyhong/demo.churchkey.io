@@ -1,42 +1,47 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
-import React from "react"
+import React from 'react'
+import SocialLinks from './social-links'
+import { useSettingsQuery } from '../queries/settings'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faChurch } from '@fortawesome/free-solid-svg-icons'
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+const Header = () => {
+
+  const { name, message, cta } = useSettingsQuery()
+
+  return (
+    <div style={headerStyle}>
+      <FontAwesomeIcon icon={faChurch} size="4x" style={{color: '#FAAE2B'}}></FontAwesomeIcon>
+      <h1>{name}</h1>
+      <SocialLinks />
+      <p>{message}</p>
+      <a style={{width: '100%', padding: '0.5em 0'}} href={cta[0].link} target="_blank" rel="noopener noreferrer">
+        <button style={buttonStyle}>{cta[0].label}</button>
+      </a>
     </div>
-  </header>
-)
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
+  )
 }
 
-Header.defaultProps = {
-  siteTitle: ``,
+const headerStyle = {
+  maxWidth: '350px',
+  display: 'flex',
+  flexDirection: 'column',
+  justifyContent: 'center',
+  alignItems: 'center',
+  textAlign: 'center',
+}
+
+const buttonStyle = {
+  width: '100%',
+  borderRadius: '30px',
+  border: 'none',
+  padding: '.5em 0',
+  color: '#fff',
+  backgroundColor: '#00473E',
+  fontSize: '1.5em',
+  fontWeight: '900',
+  cursor: 'pointer',
+  fontFamily: 'Montserrat',
+  boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
 }
 
 export default Header
