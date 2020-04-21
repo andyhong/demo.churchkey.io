@@ -3,7 +3,7 @@ import { Redirect } from '@reach/router'
 
 const IndexPage = ({data}) => (
   
-  <Redirect noThrow to={`/bulletins/${data.allMarkdownRemark.edges[0].node.frontmatter.date}`} />
+  <Redirect to={`/bulletins/${data.allMarkdownRemark.edges[0].node.frontmatter.date}`} />
 )
 
 export const CurrentBulletinQuery = graphql`
