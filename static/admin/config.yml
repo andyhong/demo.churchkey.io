@@ -6,9 +6,9 @@ media_folder: "/static/images"
 public_folder: "/images"
 
 collections:
-  - name: "bulletins"
-    label: "Bulletins"
-    folder: "content/bulletins"
+  - name: "bulletin"
+    label: "Bulletin"
+    folder: "content/bulletin"
     create: true
     slug: "bulletins-{{year}}-{{month}}-{{day}}"
     editor:
