@@ -2,7 +2,6 @@ import React from "react"
 import { Redirect } from '@reach/router'
 
 const IndexPage = ({data}) => (
-  
   <Redirect noThrow to={`/bulletins/${data.allMarkdownRemark.edges[0].node.frontmatter.date}`} />
 )
 
