@@ -5,19 +5,17 @@ export const useSettingsQuery = () => {
     graphql`
       query settingsQuery {
         allMarkdownRemark(filter: {frontmatter: {type: {eq: "church"}}}) {
-          edges {
-            node {
-              frontmatter {
-                name
-                message
-                links {
-                  type
-                  link
-                }
-                cta {
-                  label
-                  link
-                }
+          nodes {
+            frontmatter {
+              name
+              message
+              links {
+                type
+                link
+              }
+              cta {
+                label
+                link
               }
             }
           }
@@ -25,5 +23,5 @@ export const useSettingsQuery = () => {
       }
     `
   )
-  return allMarkdownRemark.edges[0].node.frontmatter
+  return allMarkdownRemark.nodes[0].frontmatter
 }
