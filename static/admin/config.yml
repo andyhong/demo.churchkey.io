@@ -28,6 +28,8 @@ collections:
           - {label: "Link", name: "link", widget: "string"}
   - name: "settings"
     label: "Settings"
+    editor:
+      preview: false
     files:
       - label: "Church Information"
         name: "church"
