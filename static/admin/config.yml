@@ -47,5 +47,5 @@ collections:
             name: "links"
             widget: "list"
             fields:
-              - {label: "Link type", name: "type", widget: string}
-              - {label: "Link URL", name: "link", widget: string}
+              - {label: "Link type", name: "type", widget: "select", options: ["Instagram", "Twitter", "YouTube", "Facebook", "Website"]}
+              - {label: "Link URL", name: "link", widget: "string"}
