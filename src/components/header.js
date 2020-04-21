@@ -10,7 +10,7 @@ const Header = () => {
 
   return (
     <div style={headerStyle}>
-      <FontAwesomeIcon icon={faChurch} size="4x" style={{color: '#FAAE2B'}}></FontAwesomeIcon>
+      <FontAwesomeIcon icon={faChurch} size="4x" style={{color: 'FAAE2B'}}></FontAwesomeIcon>
       <h1>{name}</h1>
       <SocialLinks />
       <p>{message}</p>
@@ -36,7 +36,7 @@ const buttonStyle = {
   border: 'none',
   padding: '.5em 0',
   color: '#fff',
-  backgroundColor: '#00473E',
+  backgroundColor: '#6cbede',
   fontSize: '1.5em',
   fontWeight: '900',
   cursor: 'pointer',

@@ -8,7 +8,7 @@ html {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  background-color: #F2F7F5;
+  background-color: #F7f7f7;
 }
 
 *, *:before, *:after {
@@ -26,24 +26,24 @@ h1 {
   font-size: 3em;
   line-height: 0.9;
   padding: 0.25em 0;
-  color: #00473E;
+  color: #6cbede;
 }
 
 h3 {
   font-weight: 900;
-  color: #00473E;
+  color: #393939;
 }
 
 small {
   font-weight: 500;
-  color: #00473E;
+  color: #393939;
   font-size: 0.75em;
 }
 
 p {
   font-weight: 300;
   padding: 0.5em 0;
-  color: #00473E;
+  color: #393939;
 }
 
 hr {

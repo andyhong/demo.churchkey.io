@@ -30,8 +30,8 @@ const eventsStyle = {
 
 const eventBoxStyle = {
   marginBottom: '1.5em',
-  backgroundColor: '#F2F7F5',
-  border: '0.3em solid #00473E',
+  backgroundColor: '#f7f7f7',
+  border: '0.3em solid #6cbede',
   padding: '1.25em',
   borderRadius: '35px',
   boxShadow: '0px 4px 4px rgba(0, 0, 0, 0.25)',
