@@ -65,7 +65,7 @@ a, a:visited {
 
 .wrapper {
   margin: 0 auto;
-  margin-top: 2em;
+  margin-top: 3em;
   max-width: 375px;
   display: flex;
   flex-direction: column;
