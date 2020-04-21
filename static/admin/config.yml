@@ -6,11 +6,11 @@ media_folder: "/static/images"
 public_folder: "/images"
 
 collections:
-  - name: "bulletin"
+  - name: "bulletins"
     label: "Bulletins"
     folder: "content/bulletins"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    slug: "bulletins-{{year}}-{{month}}-{{day}}"
     editor:
       preview: false
     fields:
@@ -26,3 +26,26 @@ collections:
           - {label: "Time", name: "time", widget: "string"}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Link", name: "link", widget: "string"}
+  - name: "settings"
+    label: "Settings"
+    files:
+      - label: "Church Information"
+        name: "church"
+        file: "/content/config/church.md"
+        fields:
+          - {label: "Type", name: "type", widget: "hidden", default: "church"}
+          - {label: "Church name", name: "name", widget: "string"}
+          - {label: "Welcome message", name: "message", widget: "text"}
+          - {label: "Church Name", name: "name", widget: "string"}
+          - label: "Call to action links"
+            name: "cta"
+            widget: "list"
+            fields:
+              - {label: "Label", name: "label", widget: "string"}
+              - {label: "URL", name: "link", widget: "string"}
+          - label: "Social media links"
+            name: "links"
+            widget: "list"
+            fields:
+              - {label: "Link type", name: "type", widget: string}
+              - {label: "Link URL", name: "link", widget: string}

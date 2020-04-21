@@ -1,5 +1,5 @@
 ---
-type: "settings"
+type: "church"
 name: "demo church"
 links:
   - type: "Instagram"

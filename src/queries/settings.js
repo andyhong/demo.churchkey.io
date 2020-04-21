@@ -4,7 +4,7 @@ export const useSettingsQuery = () => {
   const { allMarkdownRemark } = useStaticQuery(
     graphql`
       query settingsQuery {
-        allMarkdownRemark(filter: {frontmatter: {type: {eq: "settings"}}}) {
+        allMarkdownRemark(filter: {frontmatter: {type: {eq: "church"}}}) {
           edges {
             node {
               frontmatter {
