@@ -12,11 +12,10 @@ const BulletinTemplate = ({data}) => {
 
   return (
     <div className="wrapper">
-      <SEO title={data.markdownRemark.frontmatter.date} />
+      <SEO title={data.markdownRemark.frontmatter.title} />
       <Header />
       <Events events={events} />
       <Footer />
-      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </div>
   )
 }
@@ -25,6 +24,7 @@ export const BulletinQuery = graphql`
   query BulletinById ($id: String) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        title
         date(formatString: "YYYY-MM-DD")
         events {
           name

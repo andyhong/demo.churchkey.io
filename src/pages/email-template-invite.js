@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EmailInvitePage = () => (
+const EmailTemplateInvitePage = () => (
   <>
   <h2>You have been invited xD</h2>
   <p>You have been invited to create a user on {`{{ .SiteURL }}`}. Follow this link to accept the invite:</p>
@@ -8,4 +8,4 @@ const EmailInvitePage = () => (
   </>
 )
 
-export default EmailInvitePage
+export default EmailTemplateInvitePage

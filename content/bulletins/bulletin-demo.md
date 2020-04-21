@@ -1,6 +1,6 @@
 ---
 type: "bulletin"
-title: "2020-04-20"
+title: "04/20/2020"
 date: 2020-04-20
 events:
   - name: "Baptisms"
