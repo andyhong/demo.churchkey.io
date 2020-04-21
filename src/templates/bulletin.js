@@ -16,6 +16,7 @@ const BulletinTemplate = ({data}) => {
       <Header />
       <Events events={events} />
       <Footer />
+      <script type="text/javascript" src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </div>
   )
 }
