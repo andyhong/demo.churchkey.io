@@ -1,6 +1,6 @@
 ---
 type: "settings"
-name: "mariners church"
+name: "demo church"
 links:
   - type: "Instagram"
     link: "https://instagram.com/andyhxng"
@@ -14,6 +14,6 @@ links:
     link: "https://google.com"
 message: "Thanks for joining us at one of our services! Click on any of the boxes below for more information on the highlighted events from this week's bulletin."
 cta:
-  - label: "join our email list!"
+  - label: "call to action"
     link: "https://my.marinerschurch.org/portal/get_form.aspx?id=8c294243-114b-4e16-9bb0-d30154484deb"
 ---

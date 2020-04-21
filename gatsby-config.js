@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Your Church Bulletin`,
+    title: `demo church`,
     description: `The weekly bulletin for the Your Church`,
     author: `@andyhxng`,
   },

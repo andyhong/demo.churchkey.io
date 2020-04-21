@@ -1,0 +1,20 @@
+---
+type: "bulletin"
+date: 2020-04-20
+events:
+  - name: "Baptisms"
+    date: ""
+    time: "after services"
+    link: "https://www.marinerschurch.org/events/event-detail/?eventid=168061"
+    description: "Share this important and exciting step of faith with the Mariners family to publicly display the work Jesus has done in your life."
+  - name: "Men's Bible Study"
+    date: "Tuesday nights"
+    time: "7-9p"
+    link: "https://www.marinerschurch.org/events/event-detail/?eventid=168061"
+    description: "A group of men, studying God's word and holding each other up in prayer as we travel life's road together."
+  - name: "VBS"
+    date: "June 15-19"
+    time: "9a-12p"
+    link: "https://www.marinerschurch.org/events/event-detail/?eventid=168061"
+    description: "Kids, K-5th grade, come for a week of fun as they learn how to dig deep into God's word. Complete with Bible stories, games, crafts, snack and opportunities to serve others, kids will experience God's power."
+---
