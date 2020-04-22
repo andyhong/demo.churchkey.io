@@ -3,7 +3,7 @@ import React from 'react'
 const Footer = () => {
   return (
     <div style={footerStyle}>
-      <p>Built by <a href="https://instagram.com/andyhxng" target="_blank" rel="noopener noreferrer"><span style={spanStyle}>Andy Hong</span></a></p>
+      <p>Built by <a href="https://instagram.com/andyhxng" name="Andy Hong" target="_blank" rel="noopener noreferrer"><span style={spanStyle}>Andy Hong</span></a></p>
     </div>
   )
 }

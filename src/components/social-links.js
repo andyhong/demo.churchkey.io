@@ -19,7 +19,7 @@ const SocialLinks = () => {
   return (
     <div style={linksStyle}>
       {links.map(link => (
-        <a key={link.type} style={iconStyle} href={link.link} target="_blank" rel="noopener noreferrer">
+        <a key={link.type} name={link.type} style={iconStyle} href={link.link} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={['fab', icons[link.type]]} size="3x"></FontAwesomeIcon>
         </a>
       ))}
