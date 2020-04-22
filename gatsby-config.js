@@ -27,6 +27,17 @@ module.exports = {
         path: `${__dirname}/content/config`,
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Montserrat`,
+            variants: [`300`,`400`, `500`, `600`, `700`, `900`]
+          },
+        ]
+      }
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

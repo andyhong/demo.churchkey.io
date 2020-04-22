@@ -5,7 +5,7 @@ function Events (props) {
     <div style={eventsStyle}>
       {props.events.map(event => (
         <div key={event.name} style={eventStyle}>
-          <a href={event.link} target="_blank" rel="noopener noreferrer">
+          <a name={event.name} href={event.link} target="_blank" rel="noopener noreferrer">
             <div style={eventBoxStyle}>
               <h3>{event.name}</h3>
               {/* {event.date === "" && event.time === "" ? <></> : <small>{event.date} | {event.time}</small>} */}
