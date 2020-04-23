@@ -37,7 +37,7 @@ const buttonStyle = {
   border: 'none',
   padding: '.5em 0',
   color: '#fff',
-  backgroundColor: '#6cbede',
+  backgroundColor: '#191545',
   fontSize: '1.5em',
   fontWeight: '900',
   cursor: 'pointer',

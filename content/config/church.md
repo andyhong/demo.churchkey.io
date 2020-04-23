@@ -1,6 +1,6 @@
 ---
 type: church
-name: demo church
+name: your church
 message: "Thanks for joining us one of our online services! Click on any of the
   boxes below for more information on the highlighted events from this week's
   bulletin. "
