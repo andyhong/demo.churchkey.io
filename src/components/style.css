@@ -8,7 +8,7 @@ html {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   font-size: 16px;
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
 }
 
 *, *:before, *:after {
@@ -123,7 +123,7 @@ a, a:visited {
 
 .eventBox {
   margin-bottom: 1.5em;
-  background-color: #f4f4f4;
+  background-color: #f7f7f7;
   border: 0.3em solid #191545;
   padding: 1.25em;
   border-radius: 35px;
