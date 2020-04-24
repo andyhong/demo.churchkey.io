@@ -17,25 +17,14 @@ const SocialLinks = () => {
   }
 
   return (
-    <div style={linksStyle}>
+    <div className="socialWrapper">
       {links.map(link => (
-        <a key={link.type} name={link.type} style={iconStyle} href={link.link} target="_blank" rel="noopener noreferrer">
+        <a key={link.type} name={link.type} href={link.link} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={['fab', icons[link.type]]} size="3x"></FontAwesomeIcon>
         </a>
       ))}
     </div>
   )
-}
-
-const linksStyle = {
-  display: 'flex',
-  justifyContent: 'space-evenly',
-  width: '100%',
-  padding: '0.25em 0',
-}
-
-const iconStyle = {
-  color: '#FAAE2B'
 }
 
 export default SocialLinks
