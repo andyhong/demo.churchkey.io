@@ -19,7 +19,7 @@ const SocialLinks = () => {
   return (
     <div className="socialWrapper">
       {links.map(link => (
-        <a key={link.type} name={link.type} href={link.link} target="_blank" rel="noopener noreferrer">
+        <a key={link.type} aria-label={link.type} href={link.link} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={['fab', icons[link.type]]} size="3x"></FontAwesomeIcon>
         </a>
       ))}

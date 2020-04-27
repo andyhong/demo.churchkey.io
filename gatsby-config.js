@@ -43,7 +43,7 @@ module.exports = {
       options: {
         name: `Demo Church Bulletin`,
         short_name: `Demo Church`,
-        start_url: `/bulletins`,
+        start_url: `/`,
         background_color: `#f7f7f7`,
         theme_color: `#faae2b`,
         display: `minimal-ui`,
