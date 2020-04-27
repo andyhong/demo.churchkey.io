@@ -9,13 +9,15 @@ const IndexPage = ({ data }) => {
   const { title, events } = data.allMarkdownRemark.nodes[0].frontmatter
 
   return (
-    <div className="wrapper">
-      <SEO title={title} />
-      <Header />
-      <Events events={events} />
+    <>
+      <div className="wrapper">
+        <SEO title={title} />
+        <Header />
+        <Events events={events} />
+      </div>
       <Footer />
       <noscript>You need to enable JavaScript to run this app.</noscript>
-    </div>
+    </>
   )
 }
 

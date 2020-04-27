@@ -22,6 +22,12 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul, small, hr {
   line-height: 1.4;
 }
 
+#gatsby-focus-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
 h1 {
   font-weight: 900;
   font-size: 3em;
@@ -66,16 +72,17 @@ a, a:visited {
 
 .wrapper {
   margin: 0 auto;
-  margin-top: 3em;
   max-width: 375px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding-bottom: 3rem;
 }
 
 .headerWrapper {
+  margin-top: 3em;
   max-width: 350px;
   display: flex;
   flex-direction: column;
@@ -139,7 +146,15 @@ a, a:visited {
   border: 0.3em solid var(--secondary);
 }
 
-.footerWrapper > span {
+.footerWrapper {
+  position: absolute;
+  height: 3rem;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footerWrapper > p > a > span {
   color: var(--primary);
   font-weight: 900;
   font-size: 1.2em;

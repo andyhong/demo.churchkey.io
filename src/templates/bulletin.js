@@ -11,13 +11,15 @@ const BulletinTemplate = ({data}) => {
   const { events } = data.markdownRemark.frontmatter
 
   return (
-    <div className="wrapper">
-      <SEO title={data.markdownRemark.frontmatter.title} />
-      <Header />
-      <Events events={events} />
-      <Footer />
+    <>
+      <div className="wrapper">
+        <SEO title={data.markdownRemark.frontmatter.title} />
+        <Header />
+        <Events events={events} />
+        <Footer />
+      </div>
       <noscript>You need to enable JavaScript to run this app.</noscript>
-    </div>
+    </>
   )
 }
 
