@@ -46,9 +46,8 @@ module.exports = {
         start_url: `/`,
         background_color: `#f7f7f7`,
         theme_color: `#faae2b`,
-        display: `standalone`,
-        icon: `src/images/logo.svg`,
-        cache_busting_mode: `none`,
+        display: `minimal-ui`,
+        icon: `src/images/logo.jpeg`,
       },
     },
     {
