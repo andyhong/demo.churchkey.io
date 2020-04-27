@@ -9,7 +9,7 @@ collections:
     label: "Bulletin"
     folder: "content/bulletin"
     create: true
-    slug: "bulletins-{{year}}-{{month}}-{{day}}"
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
