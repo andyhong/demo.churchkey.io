@@ -51,14 +51,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-offline`,
-      options: {
-        workboxConfig: {
-          globPatterns: [`**/*`],
-        },
-      },
-    },
-    {
       resolve: `gatsby-plugin-netlify`,
       options: {
         addPageHeaders: [
@@ -66,6 +58,7 @@ module.exports = {
         ], 
       },
     },
+    `gatsby-plugin-offline`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,

@@ -149,6 +149,7 @@ a, a:visited {
 .footerWrapper {
   position: absolute;
   height: 3rem;
+  margin-bottom: 1rem;
   bottom: 0;
   width: 100%;
   text-align: center;
