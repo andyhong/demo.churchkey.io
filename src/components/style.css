@@ -95,6 +95,7 @@ a, a:visited {
   cursor: pointer;
   font-family: 'Montserrat';
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease;
 }
 
 .headerWrapper > a > button:hover {
@@ -110,6 +111,7 @@ a, a:visited {
 
 .socialWrapper > a {
   color: #FAAE2B;
+  transition: all 0.3s ease;
 }
 
 .socialWrapper > a:hover {
@@ -129,6 +131,7 @@ a, a:visited {
   border-radius: 35px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   text-align: left;
+  transition: all 0.3s ease;
 }
 
 .eventBox:hover {
