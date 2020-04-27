@@ -38,6 +38,27 @@ module.exports = {
         ]
       }
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Demo Church Bulletin`,
+        short_name: `Demo Church`,
+        start_url: `/`,
+        background_color: `#f7f7f7`,
+        theme_color: `#faae2b`,
+        display: `standalone`,
+        icon: `src/images/logo.svg`,
+        cache_busting_mode: `none`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-offline`,
+      options: {
+        workboxConfig: {
+          globPatterns: [`**/*`],
+        },
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
