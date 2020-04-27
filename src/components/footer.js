@@ -14,7 +14,7 @@ const footerStyle = {
 }
 
 const spanStyle = {
-  color: '#FAAE2B',
+  color: '#191545',
   fontWeight: '700',
 }
 
