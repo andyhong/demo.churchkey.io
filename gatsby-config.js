@@ -58,6 +58,14 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        addPageHeaders: [
+          `cache-control: public, max-age=0, must-revalidate`
+        ], 
+      },
+    },
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
