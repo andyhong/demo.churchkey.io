@@ -39,6 +39,14 @@ module.exports = {
       }
     },
     {
+      resolve: `gatsby-plugin-netlify`,
+      options: {
+        addPageHeaders: [
+          `cache-control: public, max-age=0, must-revalidate`
+        ], 
+      },
+    },
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Demo Church Bulletin`,
@@ -48,14 +56,6 @@ module.exports = {
         theme_color: `#faae2b`,
         display: `minimal-ui`,
         icon: `src/images/logo.jpeg`,
-      },
-    },
-    {
-      resolve: `gatsby-plugin-netlify`,
-      options: {
-        addPageHeaders: [
-          `cache-control: public, max-age=0, must-revalidate`
-        ], 
       },
     },
     `gatsby-plugin-offline`,
