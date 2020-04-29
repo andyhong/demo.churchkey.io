@@ -65,11 +65,16 @@ module.exports = {
         icon: `src/images/logo.jpeg`,
       },
     },
+    {
+      resolve: `gatsby-plugin-netlify-identity`,
+      options: {
+        url: `https://churchkeydemo.netlify.app`,
+      },
+    },
     `gatsby-plugin-offline`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-plugin-netlify-identity-widget`,
   ],
 }
