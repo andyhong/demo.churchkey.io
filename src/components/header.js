@@ -1,8 +1,6 @@
 import React from 'react'
 import SocialLinks from './social-links'
-
-import './fontawesome'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import logo from '../images/door.svg'
 
 function Header (props) {
 
@@ -10,7 +8,7 @@ function Header (props) {
 
   return (
     <div className="headerWrapper">
-      <FontAwesomeIcon icon={`church`} size="4x" style={{color: 'FAAE2B'}}></FontAwesomeIcon>
+      <img src={logo} height="90" width="90" alt="logo"></img>
       <h1>{ name }</h1>
       <SocialLinks links={links} />
       <p>{ message }</p>

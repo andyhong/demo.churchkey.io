@@ -1,5 +1,4 @@
 import { library } from '@fortawesome/fontawesome-svg-core'
-import { faChurch } from '@fortawesome/free-solid-svg-icons'
 import { faInstagram,
          faTwitter,
          faFacebook,
@@ -11,7 +10,6 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 config.autoAddCss = false
 
 library.add(
-  faChurch,
   faInstagram,
   faTwitter,
   faFacebook,

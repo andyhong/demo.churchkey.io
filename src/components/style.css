@@ -82,7 +82,7 @@ a, a:visited {
 }
 
 .headerWrapper {
-  margin-top: 2.5em;
+  margin-top: 2em;
   max-width: 350px;
   display: flex;
   flex-direction: column;
