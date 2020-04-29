@@ -9,9 +9,9 @@ cta:
     link: https://churchkey.churchcenter.com/people/forms/130032
 links:
   - type: Instagram
-    link: https://instagram.com/andyhxng
+    link: https://instagram.com/churchkeyio
   - type: Twitter
-    link: https://twitter.com/andyhxng
+    link: https://twitter.com/churchkeyio
   - type: Facebook
     link: https://facebook.com
   - type: YouTube
