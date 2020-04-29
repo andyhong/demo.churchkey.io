@@ -9,7 +9,7 @@ collections:
     label: "Bulletin"
     folder: "content/bulletin"
     create: true
-    slug: "{{slug}}"
+    slug: "bulletin-{{slug}}"
     editor:
       preview: false
     fields:
@@ -30,7 +30,7 @@ collections:
     label: "Hub"
     folder: "content/hub"
     create: true
-    slug: "{{slug}}"
+    slug: "hub-{{slug}}"
     editor:
       preview: false
     fields:
@@ -59,7 +59,6 @@ collections:
           - {label: "Type", name: "type", widget: "hidden", default: "church"}
           - {label: "Church name", name: "name", widget: "string"}
           - {label: "Welcome message", name: "message", widget: "text"}
-          - {label: "Church Name", name: "name", widget: "string"}
           - label: "Call to action links"
             name: "cta"
             widget: "list"
@@ -82,7 +81,6 @@ collections:
           - {label: "Type", name: "type", widget: "hidden", default: "church"}
           - {label: "Church name", name: "name", widget: "string"}
           - {label: "Welcome message", name: "message", widget: "text"}
-          - {label: "Church Name", name: "name", widget: "string"}
           - label: "Call to action links"
             name: "cta"
             widget: "list"
