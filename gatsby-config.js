@@ -49,7 +49,7 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         addPageHeaders: [
-          `cache-control: no-cache`,
+          `cache-control: no-store`,
         ], 
       },
     },
