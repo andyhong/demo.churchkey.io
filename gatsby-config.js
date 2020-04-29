@@ -65,6 +65,7 @@ module.exports = {
         icon: `src/images/door.svg`,
       },
     },
+    `gatsby-plugin-remove-serviceworker`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
