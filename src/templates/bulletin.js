@@ -8,14 +8,12 @@ import SEO from "../components/seo"
 
 const BulletinTemplate = ({data}) => {
 
-  const { events } = data.markdownRemark.frontmatter
-
   return (
     <>
       <div className="wrapper">
-        <SEO title={data.markdownRemark.frontmatter.title} />
-        <Header />
-        <Events events={events} />
+        <SEO title={data.content.frontmatter.title} />
+        <Header data={data.config}/>
+        <Events events={data.content.frontmatter.events} />
         <Footer />
       </div>
       <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -24,17 +22,34 @@ const BulletinTemplate = ({data}) => {
 }
 
 export const BulletinQuery = graphql`
-  query BulletinById ($id: String) {
-    markdownRemark(id: { eq: $id }) {
+  query BulletinById ($id: String, $config: String) {
+    content: markdownRemark(id: {eq: $id}) {
       frontmatter {
+        config
+        type
         title
-        date(formatString: "YYYY-MM-DD")
         events {
           name
           date
           time
           link
           description
+        }
+      }
+    }
+    config: markdownRemark(frontmatter: {type: {eq: $config}}) {
+      frontmatter {
+        name
+        message
+        type
+        title
+        cta {
+          label
+          link
+        }
+        links {
+          type
+          link
         }
       }
     }

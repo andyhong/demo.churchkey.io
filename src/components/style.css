@@ -103,7 +103,7 @@ a, a:visited {
   cursor: pointer;
   font-family: 'Montserrat';
   box-shadow: var(--box-shadow);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .headerWrapper > a > button:hover {
@@ -119,7 +119,7 @@ a, a:visited {
 
 .socialWrapper > a {
   color: var(--secondary);
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .socialWrapper > a:hover {
@@ -139,7 +139,7 @@ a, a:visited {
   border-radius: 35px;
   box-shadow: var(--box-shadow);
   text-align: left;
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .eventBox:hover {
@@ -156,7 +156,7 @@ a, a:visited {
 }
 
 .footerWrapper > p > a > span {
-  transition: all 0.3s ease;
+  transition: all 0.2s ease;
 }
 
 .footerWrapper > p > a > span:hover {

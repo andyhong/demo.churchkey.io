@@ -1,12 +1,9 @@
 import React from 'react'
-import { useSettingsQuery } from '../queries/settings'
 
 import './fontawesome'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-const SocialLinks = () => {
-
-  const { links } = useSettingsQuery()
+const SocialLinks = (props) => {
 
   const icons = {
     "Instagram": 'instagram',
@@ -18,7 +15,7 @@ const SocialLinks = () => {
 
   return (
     <div className="socialWrapper">
-      {links.map(link => (
+      {props.links.map(link => (
         <a key={link.type} aria-label={link.type} href={link.link} target="_blank" rel="noopener noreferrer">
         <FontAwesomeIcon icon={['fab', icons[link.type]]} size="3x"></FontAwesomeIcon>
         </a>

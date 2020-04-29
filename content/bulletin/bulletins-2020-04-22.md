@@ -1,5 +1,6 @@
 ---
 type: bulletin
+config: "church"
 title: 05/03/2020
 date: 2020-05-03T21:10:56.716Z
 events:

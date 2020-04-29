@@ -1,0 +1,15 @@
+---
+type: "hub"
+config: "outreach"
+title: "outreach"
+events:
+  - name: "Lighthouse Community Center Tutoring"
+    date: ""
+    time: ""
+    link: "https://www.marinerschurch.org/events/event-detail/?eventid=168061"
+    description: "Sign up as a tutor at our LCC to guide students with homework, help them excel, and grow in relationship with them."
+  - name: "Exceptional Worship"
+    date: "Sat, Feb 15"
+    time: "5p"
+    link: "https://www.marinerschurch.org/events/event-detail/?eventid=168061"
+    description: "Exceptional Adults are invited to the Community Center for worship, an interactive Bible-based message and a variety of other activities and games."

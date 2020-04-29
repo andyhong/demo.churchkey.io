@@ -5,29 +5,53 @@ exports.createPages = ({ graphql, actions }) => {
   const bulletinTemplate = path.resolve(`src/templates/bulletin.js`)
   
   return graphql(`
-  {
-    allMarkdownRemark(filter: {frontmatter: {type: {eq: "bulletin"}}}, sort: {fields: [frontmatter___date], order: DESC}) {
-      edges {
-        node {
-          id
-          frontmatter {
-            date(formatString: "YYYY-MM-DD")
+    {
+      bulletins: allMarkdownRemark(filter: {frontmatter: {type: {eq: "bulletin"}}}, sort: {fields: [frontmatter___date], order: DESC}) {
+        edges {
+          node {
+            id
+            frontmatter {
+              config
+              date(formatString: "YYYY-MM-DD")
+            }
+          }
+        }
+      }
+
+      hubs: allMarkdownRemark(filter: {frontmatter: {type: {eq: "hub"}}}) {
+        edges {
+          node {
+            id
+            frontmatter {
+              config
+              title
+            }
           }
         }
       }
     }
-  }
   `).then(res => {
     if (res.errors) {
       return Promise.reject(res.errors)
     }
 
-    res.data.allMarkdownRemark.edges.forEach(({node}) => {
+    res.data.bulletins.edges.forEach(({node}) => {
       const id = node.id
+      const config = node.frontmatter.config
       createPage({
-        path: `/bulletins/${node.frontmatter.date}`,
+        path: `/bulletin/${node.frontmatter.date}`,
         component: bulletinTemplate,
-        context: { id: id },
+        context: { id: id, config: config },
+      })
+    })
+
+    res.data.hubs.edges.forEach(({node}) => {
+      const id = node.id
+      const config = node.frontmatter.config
+      createPage({
+        path: `/${node.frontmatter.title}`,
+        component: bulletinTemplate,
+        context: { id: id, config: config },
       })
     })
   })
