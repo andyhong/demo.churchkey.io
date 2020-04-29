@@ -1,3 +1,1 @@
-export function onServiceWorkerUpdateReady() {
-  window.location.reload(true)
-}
+// exports.onServiceWorkerUpdateReady = () => { window.location.reload(true) }

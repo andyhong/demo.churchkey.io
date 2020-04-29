@@ -49,7 +49,7 @@ module.exports = {
       resolve: `gatsby-plugin-netlify`,
       options: {
         addPageHeaders: [
-          `cache-control: no-store`,
+          `Cache-Control: no-store`,
         ], 
       },
     },
@@ -65,7 +65,6 @@ module.exports = {
         icon: `src/images/door.svg`,
       },
     },
-    `gatsby-plugin-offline`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
