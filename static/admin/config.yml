@@ -23,8 +23,8 @@ collections:
         widget: "list"
         fields:
           - {label: "Name", name: "name", widget: "string"}
-          - {label: "Date", name: "date", widget: "string"}
-          - {label: "Time", name: "time", widget: "string"}
+          - {label: "Date", name: "date", widget: "string", required: false}
+          - {label: "Time", name: "time", widget: "string", required: false}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Link", name: "link", widget: "string"}
   - name: "hub"
@@ -44,8 +44,8 @@ collections:
         widget: "list"
         fields:
           - {label: "Name", name: "name", widget: "string"}
-          - {label: "Date", name: "date", widget: "string"}
-          - {label: "Time", name: "time", widget: "string"}
+          - {label: "Date", name: "date", widget: "string", required: false}
+          - {label: "Time", name: "time", widget: "string", required: false}
           - {label: "Description", name: "description", widget: "text"}
           - {label: "Link", name: "link", widget: "string"}
   - name: "settings"
