@@ -9,8 +9,8 @@ function Events (props) {
             <div className="eventBox">
               <h3>{event.name}</h3>
               {/* {event.date === "" && event.time === "" ? <></> : <small>{event.date} | {event.time}</small>} */}
-              {event.date === "" && event.time === "" && <></>}
-              {event.date !== "" && event.time !== "" && <small>{event.date} | {event.time}</small>}
+              {event.date === null && event.time === null && <></>}
+              {event.date !== null && event.time !== null && <small>{event.date} | {event.time}</small>}
               {event.date === "" && <small>{event.time}</small>}
               {event.time === "" && <small>{event.date}</small>}
               <hr />
