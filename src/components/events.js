@@ -8,11 +8,9 @@ function Events (props) {
           <a name={event.name} href={event.link} target="_blank" rel="noopener noreferrer">
             <div className="eventBox">
               <h3>{event.name}</h3>
-              {/* {event.date === "" && event.time === "" ? <></> : <small>{event.date} | {event.time}</small>} */}
-              {event.date === null && event.time === null && <></>}
-              {event.date !== null && event.time !== null && <small>{event.date} | {event.time}</small>}
-              {event.date === "" && <small>{event.time}</small>}
-              {event.time === "" && <small>{event.date}</small>}
+              {event.date.length > 0 && event.time.length > 0 ? <small>{event.date} | {event.time}</small> : <></>}
+              {event.date.length === 0 && event.time.length > 0 && <small>{event.time}</small>}
+              {event.time.length === 0 && event.date.length > 0 && <small>{event.date}</small>}
               <hr />
               <small>{event.description}</small>
             </div>
