@@ -21,6 +21,6 @@ events:
     description: Community is more important now than ever before. Join an online
       group today.
     link: https://churchkey.churchcenter.com/registrations/events/418517
-    date: temp
-    time: temp
+    date: ""
+    time: ""
 ---
