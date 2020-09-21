@@ -11,6 +11,12 @@ events:
       about our church and how they can connected to our ministries and
       community.
     link: https://churchkey.churchcenter.com/registrations/events/418515
+  - name: Pumpkin Patch
+    date: Oct 3
+    time: 4-6pm
+    description: Join us at our annual pumpkin patch! There will be activities for
+      families, as well as food!
+    link: https://google.com
   - name: Men's Bible Study
     date: Tuesday nights
     time: 7-9p
